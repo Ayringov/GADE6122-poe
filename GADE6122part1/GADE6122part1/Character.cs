@@ -94,17 +94,25 @@ namespace GADE6122part1
                 case Movement.Right: x += 1; break;
             }
         }
+        public void SetVision(Tile up, Tile down, Tile left, Tile right)
+        {
+            vision[0] = up;
+            vision[1] = down;
+            vision[2] = left;
+            vision[3] = right;
+        }
         public abstract Movement ReturnMove(Movement move = 0);
 
         public abstract override string ToString();
 
-        public enum Movement
-        {
-            No_Movement,     //0
-            Up,              //1
-            Down,            //2
-            Left,            //3
-            Right            //4
-        }
+        
+    }
+    public enum Movement
+    {
+        No_Movement,     //0
+        Up,              //1
+        Down,            //2
+        Left,            //3
+        Right            //4
     }
 }
