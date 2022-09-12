@@ -8,9 +8,12 @@ namespace GADE6122part1
 {
     class Hero : Character
     {
+        
         public Hero(int x, int y, int hp) : base(x, y, TileType.Hero)
         {
+            this.hp = 10;
             this.damage = 2;
+            this.maxHp = 10;
         }
 
 
