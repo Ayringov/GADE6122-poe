@@ -85,20 +85,21 @@ namespace GADE6122part1
                 y = random.Next(0, height);
             }
 
+
+            switch (type) 
+        
+            {
+                case Tile.TileType.Enemy: return map[x, y] = new SwampCreature(x, y);
+                      
+
+            }
             if (type == Tile.TileType.Hero)
             {
                 return map[x, y] = new Hero(x, y, 10);
 
 
             }
-            else if (type == Tile.TileType.Enemy)
-            {
-                if (random.Next(0, 2) == 1)
-                {
-                    map[x, y] = new SwampCreature(x, y);
-                }
-
-            }
+       
             return map[x, y];
         }
 
@@ -176,8 +177,8 @@ namespace GADE6122part1
         public override string ToString()
         {
             int value = 0;
-            string mapString = "";
-            for (int y = 0; y < height; y++)
+            string mapString = " ";
+            for (int y = 0; y < height.; y++)
             {
                 for (int x = 0; x < width; x++)
                 {
@@ -192,7 +193,7 @@ namespace GADE6122part1
                         Enemy enemy = (Enemy)map[x, y];
                         if (enemy.IsDead())
                         {
-                            mapString += '\u2020';
+                            mapString += " ";
                         }
                         else
                         {
@@ -219,7 +220,7 @@ namespace GADE6122part1
         }
 
 
-
+        
 
     }
 }

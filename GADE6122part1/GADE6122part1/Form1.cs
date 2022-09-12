@@ -15,7 +15,7 @@ namespace GADE6122part1
 
 
         GameEngine gameEngine;
-        private object Hero;
+        private Hero hero;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -29,7 +29,7 @@ namespace GADE6122part1
             gameEngine = new GameEngine();
             lblMap.Text = gameEngine.View;
             InitializeComponent();
-            lblStats.Text = Hero.ToString();
+            lblStats.Text = gameEngine.hero.ToString();
 
         }
 
@@ -57,8 +57,9 @@ namespace GADE6122part1
             lblMap.Text = gameEngine.View;
         }
 
+        private void btnLeft_Click_1(object sender, EventArgs e)
+        {
 
-
-      
+        }
     }
 }

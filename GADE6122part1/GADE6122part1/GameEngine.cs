@@ -10,10 +10,12 @@ namespace GADE6122part1
     {
 
         Map map;
+        public Hero hero;
 
         public GameEngine()
         {
-            map = new Map(6, 12, 6, 12, 10);
+            map = new Map(10, 10, 10, 10, 1);
+            hero = map.Hero;
         }
         public string View
         {

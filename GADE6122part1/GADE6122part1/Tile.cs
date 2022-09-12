@@ -45,6 +45,7 @@ namespace GADE6122part1
             Enemy,
             Obstacle,
             Empty,
+            Weapon,
         }
 
     }
