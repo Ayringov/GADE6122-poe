@@ -15,7 +15,7 @@ namespace GADE6122part1
 
 
         GameEngine gameEngine;
-        private Hero hero;
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {

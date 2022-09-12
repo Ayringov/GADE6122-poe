@@ -14,7 +14,7 @@ namespace GADE6122part1
 
         public GameEngine()
         {
-            map = new Map(10, 10, 10, 10, 1);
+            map = new Map(10, 30, 10, 30, 5);
             hero = map.Hero;
         }
         public string View
