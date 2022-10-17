@@ -8,6 +8,7 @@ namespace GADE6122part1
 {
     class Map
     {
+        //TEST
         Tile[,] map;
         Hero hero;
         Enemy[] enemies;
