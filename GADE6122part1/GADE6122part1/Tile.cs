@@ -47,6 +47,16 @@ namespace GADE6122part1
             Empty,
             Weapon,
             Item,
+            Gold,
+        }
+
+        public enum AttackDirection
+        {
+            Up,
+            Left,
+            Down,
+            Right,
+
         }
 
     }

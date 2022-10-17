@@ -14,6 +14,7 @@ namespace GADE6122part1
         Enemy[] enemies;
         int width;
         int height;
+        Item[] items;
 
         Random random = new Random();
 
@@ -27,7 +28,7 @@ namespace GADE6122part1
             get { return enemies; }
         }
 
-        public Map(int minWidth, int maxWidth, int minHeight, int maxHeight, int numEnemies)
+        public Map(int minWidth, int maxWidth, int minHeight, int maxHeight, int numEnemies, int numItems)
         {
 
 
@@ -36,16 +37,22 @@ namespace GADE6122part1
             map = new Tile[width, height];
 
             enemies = new Enemy[numEnemies];
+            items = new Item[numItems];
 
 
             InitializeMap();
 
-            // hero
+            // hero is created
             hero = (Hero)Create(Tile.TileType.Hero);
-            //creates Swamp creatures
+            //creates Swamp creatures and now mages
             for (int i = 0; i < enemies.Length; i++)
             {
                 enemies[i] = (Enemy)Create(Tile.TileType.Enemy);
+            }
+            //creates gold
+            for (int i = 0; i < items.Length; i++)
+            {
+                items[i] = (Item)Create(Tile.TileType.Gold);
             }
 
 
@@ -90,17 +97,28 @@ namespace GADE6122part1
             switch (type) 
         
             {
-                case Tile.TileType.Enemy: return map[x, y] = new SwampCreature(x, y);
-                      
+                case Tile.TileType.Hero: return map[x, y] = new  Hero(x, y, 10);
+
 
             }
-            if (type == Tile.TileType.Hero)
+            if (type == Tile.TileType.Enemy)
             {
-                return map[x, y] = new Hero(x, y, 10);
+                if (random.Next(0, 2) == 1)
+                {
+                    map[x, y] = new SwampCreature(x, y);
+                }
+                else
+                {
+                    map[x, y] = new Mage(x, y);
+                }
 
 
             }
-       
+            if (type == Tile.TileType.Gold)
+            {
+                map[x, y] = new Gold(x, y);
+            }
+
             return map[x, y];
         }
 
@@ -115,6 +133,17 @@ namespace GADE6122part1
                 Enemy currentEnemy = enemies[i];
                 map[currentEnemy.X, currentEnemy.Y] = enemies[i];
             }
+
+            for (int i = 0; i < items.Length; i++)
+            {
+                Item item = items[i];
+                if (item != null)
+                {
+                    map[item.X, item.Y] = item;
+                }
+
+            }
+
         }
 
         public void SetEmptyTile(int x, int y)
@@ -174,6 +203,29 @@ namespace GADE6122part1
             character.SetVision(tileUp, tileDown, tileLeft, tileRight);
         }
 
+        public Item GetItemAtPosition(int x, int y)
+        {
+            
+            for (int i = 0; i < items.Length; i++)
+            {
+
+                if (items[1] == null)
+                {
+                    continue;
+                }
+
+                if (items[i].X == x && items[i].Y == y)
+                {
+                    Item temItem = items[i];
+                    items[i] = null;
+                    return temItem;
+                }
+            }
+
+
+            return null;
+        }
+
 
         public override string ToString()
         {
@@ -202,7 +254,22 @@ namespace GADE6122part1
                             {
                                 mapString += ('S' + "" + 'C');
                             }
+                            else if (enemy is Mage)
+                            {
+                                mapString += "M";
+                            }
                         }
+                    }
+
+                    else if (currentType == Tile.TileType.Item)
+                    {
+                        if (map[x, y] is Gold)
+                        {
+                            
+                            Gold gold = (Gold)map[x, y];
+                            mapString += gold.GoldAmount;
+                        }
+
                     }
 
                     else if (currentType == Tile.TileType.Empty)

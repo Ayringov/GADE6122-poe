@@ -15,6 +15,7 @@ namespace GADE6122part1
         protected Tile[] vision;
         protected Movement movement;
         Random random = new Random();
+        protected int goldbag = 0;
 
         public int HP
         {
@@ -37,6 +38,11 @@ namespace GADE6122part1
         {
             get { return vision; }
 
+        }
+        public int GoldBag
+        {
+            get { return goldbag; }
+            
         }
         public Character(int x, int y, TileType type) : base(x, y, type)
         {
@@ -100,6 +106,14 @@ namespace GADE6122part1
             vision[1] = down;
             vision[2] = left;
             vision[3] = right;
+        }
+        public void Pickup(Item item)
+        {
+            if (item is Gold)
+            {
+                Gold gold = (Gold)item;
+                goldbag += gold.GoldAmount;
+            }
         }
         public abstract Movement ReturnMove(Movement move = 0);
 

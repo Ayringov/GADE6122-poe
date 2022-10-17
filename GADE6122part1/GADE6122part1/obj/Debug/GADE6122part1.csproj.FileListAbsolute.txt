@@ -19,3 +19,13 @@ C:\Users\ggnig\Desktop\BCIS Game Design and Development\GADE6221\GADE6122part1\G
 C:\Users\ggnig\Desktop\BCIS Game Design and Development\GADE6221\GADE6122part1\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csproj.CoreCompileInputs.cache
 C:\Users\ggnig\Desktop\BCIS Game Design and Development\GADE6221\GADE6122part1\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.exe
 C:\Users\ggnig\Desktop\BCIS Game Design and Development\GADE6221\GADE6122part1\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.pdb
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csprojAssemblyReference.cache
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.Form1.resources
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.Properties.Resources.resources
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csproj.GenerateResource.cache
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csproj.CoreCompileInputs.cache
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.exe
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.pdb
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.exe.config
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.exe
+C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.pdb

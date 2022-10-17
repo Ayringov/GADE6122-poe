@@ -40,6 +40,7 @@ namespace GADE6122part1
             return "player stats: \n" +
                 "hp: " + hp + "/" + maxHp + "\n" +
                 "Damage: " + damage + "\n" +
+                "Gold: " + goldbag + "\n" +
                 "[" + x + "," + y + "]";
         }
 
