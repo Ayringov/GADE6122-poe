@@ -19,23 +19,28 @@ namespace GADE6122part1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            lblMap.Text = gameEngine.View;
+            lblStats.Text = gameEngine.hero.ToString();
         }
 
         public Form1()
         {
-            InitializeComponent();
+            
 
             gameEngine = new GameEngine();
-            lblMap.Text = gameEngine.View;
+            
             InitializeComponent();
-            lblStats.Text = gameEngine.hero.ToString();
+            
 
         }
 
         private void btnUp_Click(object sender, EventArgs e)
         {
+            //gameEngine.MovePlayer(Movement.Up);
+            //lblMap.Text = gameEngine.View;
+
             gameEngine.MovePlayer(Movement.Up);
+            lblStats.Text = gameEngine.hero.ToString();
             lblMap.Text = gameEngine.View;
         }
 
@@ -61,5 +66,33 @@ namespace GADE6122part1
         {
 
         }
+        private void frmGame_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            
+            if (e.KeyChar == 'i')
+            {
+                lblStats.Text = gameEngine.PlayerAttack(Tile.AttackDirection.Up);
+                lblMap.Text = gameEngine.View;
+            }
+            else if (e.KeyChar == 'j')
+            {
+                lblStats.Text = gameEngine.PlayerAttack(Tile.AttackDirection.Left);
+                lblMap.Text = gameEngine.View;
+            }
+            else if (e.KeyChar == 'k')
+            {
+                lblStats.Text = gameEngine.PlayerAttack(Tile.AttackDirection.Down);
+                lblMap.Text = gameEngine.View;
+            }
+            else if (e.KeyChar == 'l')
+            {
+                lblStats.Text = gameEngine.PlayerAttack(Tile.AttackDirection.Right);
+                lblMap.Text = gameEngine.View;
+            }
+            
+        }
+
+
     }
 }
