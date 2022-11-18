@@ -16,10 +16,10 @@ namespace GADE6122part1
 
         GameEngine gameEngine;
 
-        public Map Map
-        {
-            get { return map; }
-        }
+        //public Map Map
+        //{
+        //    get { return map; }
+        //}
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -97,29 +97,29 @@ namespace GADE6122part1
             }
             
         }
-        private void SaveGame()
-        {
-            gameEngine.Save();
-            UpdateDisplay();
-        }
+        //private void SaveGame()
+        //{
+        //    gameEngine.Save();
+        //    UpdateDisplay();
+        //}
 
-        private void LoadGame()
-        {
-            gameEngine.Load();
-            lblStats.Text = gameEngine.HeroStats;
-            lblMap.Text = gameEngine.View;
-            UpdateDisplay();
-        }
+        //private void LoadGame()
+        //{
+        //    gameEngine.Load();
+        //    lblStats.Text = gameEngine.HeroStats;
+        //    lblMap.Text = gameEngine.View;
+        //    UpdateDisplay();
+        //}
 
-        private void UpdateDisplay()
-        {
-            lblMap.Text = gameEngine.Map.ToString();
-            lblStats.Text = gameEngine.PlayerStats;
+        //private void UpdateDisplay()
+        //{
+        //    lblMap.Text = gameEngine.Map.ToString();
+        //    lblStats.Text = gameEngine.PlayerStats;
 
 
 
             
-        }
+        //}
 
 
     }
