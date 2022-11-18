@@ -79,7 +79,7 @@ namespace GADE6122part1
             //return false;
         }
 
-        private int DistanceTo(Character target)
+        public int DistanceTo(Character target)
         {
             int xDist = Math.Abs(target.X - x);
             int yDist = Math.Abs(target.Y - y);
