@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace GADE6122part1
 {
-    abstract class Item : Tile
+    public abstract class Item : Tile
     {
-        public Item(int x, int y) : base(x, y, TileType.Item)
+        public Item(int x, int y, TileType type) : base(x, y, TileType.Item)
         {
+
         }
+
+
+
+        protected Item(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
 
         public abstract override string ToString();
 

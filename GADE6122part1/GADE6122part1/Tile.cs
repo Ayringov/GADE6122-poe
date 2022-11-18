@@ -48,6 +48,7 @@ namespace GADE6122part1
             Weapon,
             Item,
             Gold,
+            
         }
 
         public enum AttackDirection

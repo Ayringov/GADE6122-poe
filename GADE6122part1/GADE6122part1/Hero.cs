@@ -19,7 +19,7 @@ namespace GADE6122part1
 
         public override Movement ReturnMove(Movement move = 0)
         {
-            int dir = (int)move - 1;
+            int dir = (int)move;
             Tile tile = vision[dir];
 
             if (tile != null)

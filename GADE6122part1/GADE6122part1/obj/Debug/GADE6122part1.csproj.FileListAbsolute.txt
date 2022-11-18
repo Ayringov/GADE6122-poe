@@ -29,3 +29,10 @@ C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122par
 C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.exe.config
 C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.exe
 C:\Users\ayrin\unity saves\GADEPOE2022\GADE6122-part-2\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.pdb
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csproj.AssemblyReference.cache
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.Form1.resources
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.Properties.Resources.resources
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csproj.GenerateResource.cache
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csproj.CoreCompileInputs.cache
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.exe
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.pdb
