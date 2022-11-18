@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace GADE6122part1
 {
     class GameEngine
     {
+
+        const string SAVE_FILE_NAME = "gamesave.txt";
 
         Map map;
         public Hero hero;
@@ -20,6 +24,37 @@ namespace GADE6122part1
         public string View
         {
             get { return map.ToString(); }
+        }
+
+        public void Save()
+        {
+            FileStream stream = new FileStream(
+            SAVE_FILE_NAME, FileMode.Create, FileAccess.Write
+            );
+            StreamWriter writer = new StreamWriter(stream);
+
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(stream, map);
+
+            stream.Close();
+        }
+
+        public bool Load()
+        {
+            if (!File.Exists(SAVE_FILE_NAME))
+            {
+                return false;
+            }
+
+            FileStream stream = new FileStream(
+            SAVE_FILE_NAME, FileMode.Open, FileAccess.Read
+            );
+            BinaryFormatter bf = new BinaryFormatter();
+
+            map = (Map)bf.Deserialize(stream);
+
+            stream.Close();
+            return true;
         }
 
 

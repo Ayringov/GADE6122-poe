@@ -21,7 +21,7 @@ namespace GADE6122part1
             get { return 1; }
         }
 
-        public RangedWeapon(Enum Type, int x = 0, int y = 0) : base(x, y)
+        public RangedWeapon(Enum Type, int x , int y ) : base(x, y)
         {
             if (Type is Types.RIFLE)
             {

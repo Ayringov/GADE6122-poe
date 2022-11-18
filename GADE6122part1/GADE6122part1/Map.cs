@@ -49,10 +49,20 @@ namespace GADE6122part1
             {
                 enemies[i] = (Enemy)Create(Tile.TileType.Enemy);
             }
-            //creates gold
+            //creates gold and weapons
             for (int i = 0; i < items.Length; i++)
             {
-                items[i] = (Item)Create(Tile.TileType.Gold);
+                
+                int selector = random.Next(0, 2);
+                if(selector == 0)
+                {
+                    items[i] = (Item)Create(Tile.TileType.Weapon);
+                }
+                if (selector == 1)
+                {
+                    items[i] = (Item)Create(Tile.TileType.Gold);
+                }
+                
             }
 
 
@@ -120,9 +130,35 @@ namespace GADE6122part1
 
 
             }
+            if (type == Tile.TileType.Weapon)
+            {
+                int picker = random.Next(0, 4);
+
+                if (picker == 0)
+                {
+                    map[x, y] = new RangedWeapon(RangedWeapon.Types.RIFLE, x, y);
+                }
+                if (picker == 1)
+                {
+                    map[x, y] = new RangedWeapon(RangedWeapon.Types.LONGBOW, x, y);
+                }
+                if (picker == 2)
+                {
+                    map[x, y] = new MeleeWeapon(MeleeWeapon.Types.DAGGER, x, y);
+                }
+                if (picker == 3)
+                {
+                    map[x, y] = new MeleeWeapon(MeleeWeapon.Types.LONGSWORD, x, y);
+
+                }
+            }
             if (type == Tile.TileType.Gold)
             {
-                map[x, y] = new Gold(x, y);
+                if(random.Next(0, 2)== 1)
+                {
+                    map[x, y] = new Gold(x, y);
+                }
+      
             }
 
             return map[x, y];
@@ -278,6 +314,11 @@ namespace GADE6122part1
                             
                             Gold gold = (Gold)map[x, y];
                             mapString += gold.GoldAmount;
+                        }
+                        else if (map[x, y] is Weapon)
+                        {
+                            Weapon weapon = (Weapon)map[x, y];
+                            mapString += "W";
                         }
 
                     }
