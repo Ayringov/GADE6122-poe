@@ -36,3 +36,6 @@ C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\ob
 C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.csproj.CoreCompileInputs.cache
 C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.exe
 C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\obj\Debug\GADE6122part1.pdb
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.exe.config
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.exe
+C:\Users\St10124056\Documents\GitHub\GADE6122-poe\GADE6122part1\GADE6122part1\bin\Debug\GADE6122part1.pdb

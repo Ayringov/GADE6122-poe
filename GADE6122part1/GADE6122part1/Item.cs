@@ -15,11 +15,11 @@ namespace GADE6122part1
 
 
 
-        protected Item(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
+        //protected Item(int x, int y)
+        //{
+        //    this.x = x;
+        //    this.y = y;
+        //}
 
 
         public abstract override string ToString();

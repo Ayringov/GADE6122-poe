@@ -43,25 +43,25 @@ namespace GADE6122part1
                 }
             }
                 //              (Q 3.3)     *Movement Logic *, Commented to Keep errors way
-                       int higherDir = 0;
-                       int temp = 0;
-                       if (this.y - DistanceTo(leaderTarget.y >= 0)) //Up
-                       {
-                           higherDir = 1;
-                       }
-                       else if (this.y - DistanceTo(leaderTarget.y < 0)) //Down
-                       {
-                           higherDir = 2;
-                       }
-                       else if (this.x - DistanceTo(leaderTarget.x <= 0)) //Left
-                       {
-                           higherDir = 3;
-                       }
-                       else //Right
-                       {
-                           higherDir = 4;
-                       }
-                       dir = higherDir;
+                       //int higherDir = 0;
+                       //int temp = 0;
+                       //if (this.y - DistanceTo(leaderTarget.y >= 0)) //Up
+                       //{
+                       //    higherDir = 1;
+                       //}
+                       //else if (this.y - DistanceTo(leaderTarget.y < 0)) //Down
+                       //{
+                       //    higherDir = 2;
+                       //}
+                       //else if (this.x - DistanceTo(leaderTarget.x <= 0)) //Left
+                       //{
+                       //    higherDir = 3;
+                       //}
+                       //else //Right
+                       //{
+                       //    higherDir = 4;
+                       //}
+                       //dir = higherDir;
 
             
             return (Movement)dir;

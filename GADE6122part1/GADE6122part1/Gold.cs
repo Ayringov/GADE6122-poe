@@ -11,7 +11,7 @@ namespace GADE6122part1
         private int goldAmount;
         static Random random = new Random();
 
-        public Gold(int x, int y) : base(x, y)
+        public Gold(int x, int y) : base(x, y, TileType.Gold)
         {
             goldAmount = random.Next(1, 6);
         }

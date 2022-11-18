@@ -103,13 +103,19 @@ namespace GADE6122part1
             }
             if (type == Tile.TileType.Enemy)
             {
-                if (random.Next(0, 2) == 1)
+                int chooser = random.Next(0, 3);
+                
+                if (chooser == 0)
                 {
                     map[x, y] = new SwampCreature(x, y);
                 }
-                else
+                if(chooser == 1)
                 {
                     map[x, y] = new Mage(x, y);
+                }
+                if (chooser == 2)
+                {
+                    map[x, y] = new Leader(x, y);
                 }
 
 
@@ -257,6 +263,10 @@ namespace GADE6122part1
                             else if (enemy is Mage)
                             {
                                 mapString += "M";
+                            }
+                            else if (enemy is Leader)
+                            {
+                                mapString += "L";
                             }
                         }
                     }

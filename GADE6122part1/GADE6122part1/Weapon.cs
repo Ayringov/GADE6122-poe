@@ -39,7 +39,7 @@ namespace GADE6122part1
 
         public override string ToString()
         {
-            return "weapon is " + weaponType + " its range is " + Range + " its durability is " + duribility + " and it costs " + cost;
+            return "weapon is " + weaponType + " its range is " + Range + " its durability is " + durability + " and it costs " + cost;
         }
 
     }
