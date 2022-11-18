@@ -10,7 +10,7 @@ namespace GADE6122part1
     {
         protected int damage;
         protected int range;
-        protected int duribility;
+        protected int durability;
         protected int cost;
         protected string weaponType;
 
@@ -23,9 +23,9 @@ namespace GADE6122part1
             get { return range; }
 
         }
-        public int Duribility
+        public int Durability
         {
-            get { return duribility; }
+            get { return durability; }
 
         }
         public int Cost
